@@ -19,15 +19,57 @@ Se till att när man klickar på submit-knappen i formuläret så ska tack.html 
 -->
 
 <!DOCTYPE html>
-<html>
-
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Formulär</title>
 </head>
-
 <body>
+    <h1>Mitt formulär</h1>
 
+    <form action="https://www.wikipedia.org/" method="get">
+        <fieldset>
+            <legend>Personuppgifter</legend>
+
+            <label for="namn">Namn:</label>
+            <input type="text" id="namn" name="namn" value="Afnaan Khan"><br><br>
+
+            <label for="epost">E-post:</label>
+            <input type="text" id="epost" name="epost"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Val</legend>
+
+            <p>Kön:</p>
+            <label>
+                <input type="radio" name="kon" value="man"> Man
+            </label>
+            <label>
+                <input type="radio" name="kon" value="kvinna"> Kvinna
+            </label>
+            <br><br>
+
+            <label>
+                <input type="checkbox" name="nyhetsbrev" value="ja"> Jag vill prenumerera på nyhetsbrev
+            </label>
+            <br><br>
+
+            <label for="land">Välj land:</label>
+            <select id="land" name="land">
+                <option value="sverige">Sverige</option>
+                <option value="norge">Norge</option>
+                <option value="finland">Finland</option>
+            </select>
+            <label for="djur">Välj favorit husdjur:</label>
+            <select id="djur" name="djur">
+                <option value="Alican">Alican</option>
+                <option value="katt">katt</option>
+                <option value="hund">hund</option>
+        </fieldset>
+
+        <br>
+        <input type="submit" value="Skicka">
+    </form>
 </body>
-
 </html>

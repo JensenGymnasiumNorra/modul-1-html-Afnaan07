@@ -16,15 +16,48 @@ På sidan ska det finnas:
 -->
 
 <!DOCTYPE html>
-<html>
-
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Dagstidningen</title>
+    <style>
+        body { font-family: Arial; margin: 0; }
+        .header { background: #333; color: white; padding: 20px; text-align: center; }
+        .nav { margin: 15px 0; }
+        .nav a { color: white; margin: 0 15px; text-decoration: none; }
+        .article { padding: 20px; margin: 20px; border-radius: 5px; }
+        .article img { max-width: 100%; height: auto; }
+    </style>
 </head>
-
 <body>
+    <div class="header">
+        <h1>Dagstidningen</h1>
+        <div class="nav">
+            <a href="#sektion1">Artikel 1</a>
+            <a href="#sektion2">Artikel 2</a>
+            <a href="#sektion3">Artikel 3</a>
+        </div>
+    </div>
 
+    <a id="sektion1"></a>
+    <div class="article" style="background-color: #e6f7ff;">
+        <h2>Tekniknyheter: Ny smartphone släpps</h2>
+        <p>Företaget TechCorp har presenterat sin <span style="color: #ff0000;">revolutionerande</span> nya smartphone med avancerad kamerateknik. Enheten har en 6,7-tums OLED-skärm med 120Hz uppdateringsfrekvens och ett batteri som varar i två dagar. Den nya processorn är 40% snabbare än föregående modell och stöder 5G-nätverk. Priset startar på 9999 kr och lanseras i maj. Enligt experter kommer denna telefon att förändra marknaden tack vare sin innovativa design och imponerande prestanda. Användare kan förvänta sig en överlägsen användarupplevelse med smidig multitasking och snabb laddning.</p>
+        <img src="https://picsum.photos/seed/tech123/600/400.jpg" alt="Smartphone">
+    </div>
+
+    <a id="sektion2"></a>
+    <div class="article" style="background-color: #fff2e6;">
+        <h2>Miljö: Nytt klimatavtal undertecknas</h2>
+        <p>Världsledare har enats om ett <span style="color: #006600;">historiskt</span> klimatavtal som syftar till att halvera globala utsläpp till 2030. Avtalet inkluderar bindande åtaganden för över 190 länder och sätter upp en fond på 100 miljarder dollar för klimatanpassning. För första gången inkluderas även åtgärder mot plastföroreningar i haven. Miljöorganisationer hyllar avtalet som "ett viktigt steg i rätt riktning". Experter menar att detta kan bli startskottet för en global grön omställning, men varnar för att implementeringen blir avgörande. Avtalet träder i kraft nästa år.</p>
+        <img src="https://picsum.photos/seed/climate456/600/400.jpg" alt="Klimatavtal">
+    </div>
+
+    <a id="sektion3"></a>
+    <div class="article" style="background-color: #f0e6ff;">
+        <h2>Kultur: Filmfestivalen prisar ny talang</h2>
+        <p>Årets upplaga av Stockholms Filmfestival har belönat unga regissörer med flera priser. Juryn var särskilt imponerad av <span style="color: #6600cc;">banbrytande</span> debutanter som utforskar nya berättartekniker. Festivalen visade över 200 filmer från 50 länder och lockade rekordmånga besökare. Vinnarfilmen "Nya Horisonter" skildrar en ung kvinnas resa i en framtida dystopisk värld och hyllas för sin visuella styrka och emotionella djup. Festivalchefen uttryckte glädje över att se så många nya röster få uppmärksamhet och lovade fortsatt stöd för unga filmskapare.</p>
+        <img src="https://picsum.photos/seed/film789/600/400.jpg" alt="Filmfestival">
+    </div>
 </body>
-
 </html>
